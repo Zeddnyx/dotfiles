@@ -1,0 +1,158 @@
+[module/volume]
+type = internal/pulseaudio
+interval = 5
+
+ramp-volume-0 = 墳
+format-ramp-volume-font = 2
+ramp-volume-foreground = ${colour.magenta}
+format-volume = <ramp-volume>  <label-volume>
+
+format-muted = <label-muted>  
+format-muted-prefix = 婢 
+format-muted-prefix-font = 2 
+format-muted-prefix-foreground = ${colour.grey}
+
+label-volume = %percentage%%
+label-muted = "  "
+label-muted-foreground = ${colour.foreground}
+
+
+
+[module/memory]
+type = internal/memory
+interval = 5
+format-prefix-font = 2
+
+format-prefix =  
+format-prefix-foreground = ${colour.magenta}
+label = " %percentage_used:2%%"
+format = <label>
+
+
+[module/cpu]
+type = internal/cpu
+interval = 5
+format-prefix-font = 2
+
+format-prefix = " "
+format-prefix-foreground = ${colour.cyan}
+label = %percentage:2%%
+
+
+[module/bna]
+type = custom/text
+
+content = " NA"
+content-prefix = 
+content-prefix-font = 2
+content-prefix-foreground = ${color.RED}
+content-padding = 0
+
+[module/backlight]
+type = internal/xbacklight
+
+card = intel_backlight
+
+format = <ramp>  <label>
+
+label = %percentage%%
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-5 = 
+ramp-6 = 
+ramp-7 = 
+ramp-8 = 
+ramp-9 = 
+ramp-font = 2
+ramp-foreground = ${colour.magenta}
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = ${system.sys_battery}
+adapter = ${system.sys_adapter}
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging = <animation-charging>   <label-charging>
+format-charging-prefix = 
+
+format-discharging = <ramp-capacity>   <label-discharging>
+
+format-full = <label-full>
+format-full-prefix = " "
+format-full-prefix-font = 2
+format-full-prefix-foreground = ${colour.green}
+
+label-charging = %percentage%%
+label-discharging = %percentage%%
+label-full = %percentage%%
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-font = 2
+ramp-capacity-foreground = ${colour.cyan}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-font = 2
+animation-charging-foreground = ${colour.green}
+animation-charging-framerate = 750
+
+
+[module/date]
+type = internal/date
+
+interval = 1.0
+
+time = %I:%M %p
+time-alt = %A, %d %B %Y
+
+format = <label>
+format-prefix-font = 2
+format-prefix-foreground = ${colour.magenta}
+
+label = %time%
+
+[module/network]
+type = internal/network
+interface = ${system.sys_network_interface}
+
+interval = 1.0
+
+;;ping-interval = 3
+;;udspeed-minwidth = 5
+
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>  on
+format-connected-foreground = ${colour.cyan}
+
+format-disconnected = <label-disconnected>  off
+format-disconnected-foreground = ${colour.red}
+
+label-connected = 直
+label-disconnected = 睊
+
+
+[module/sep]
+type = custom/text
+content = |
+
+content-background = ${colour.background}
+content-foreground = ${colour.black}
+content-padding = 1
