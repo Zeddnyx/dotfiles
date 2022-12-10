@@ -12,9 +12,6 @@ super + @space
 ctrl + s 
   scrot screen.png -q 100
 
-# network
-super + n
-  nmd
 
 
 # make sxhkd reload its configuration files:
@@ -28,8 +25,8 @@ super + Escape
 alt + f
   thunar
 
-alt + b
-  fiefox
+alt + v
+  ./inkscape.AppImage
 
 ctrl + s
   scrot screen -q 100

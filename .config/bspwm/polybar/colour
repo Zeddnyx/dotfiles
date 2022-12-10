@@ -1,7 +1,8 @@
 [colour]
 
-background = #aa181b28
-foreground = #111
+background = #1A1F2C
+ 
+foreground = #1b1f2c
 
 black = #131C25
 cyan = #00B3FF

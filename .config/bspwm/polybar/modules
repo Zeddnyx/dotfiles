@@ -25,7 +25,7 @@ format-prefix-font = 2
 
 format-prefix =  
 format-prefix-foreground = ${colour.magenta}
-label = " %percentage_used:2%%"
+label = " %mb_used:2%"
 format = <label>
 
 

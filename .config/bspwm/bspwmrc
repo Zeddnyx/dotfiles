@@ -22,5 +22,5 @@ bspc rule -a Screenkey manage=off
 
 kitty &
 picom  --config ~/.config/bspwm/picom/picom.conf &
-feh --bg-scale /home/zedd/.config/wallpaper/bluemoon.jpg
+feh --bg-scale /home/zedd/.config/wallpaper/greenVibe.jpg
 ~/.config/bspwm/polybar/launch.sh
