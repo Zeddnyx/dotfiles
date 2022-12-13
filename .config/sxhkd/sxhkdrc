@@ -31,6 +31,9 @@ alt + v
 ctrl + s
   scrot screen -q 100
 
+super + p
+  gpick -p
+
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
