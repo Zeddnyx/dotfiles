@@ -1,7 +1,14 @@
-# dotfiles
+Personal dotfiles, lightweight and smooth af
 
 # required
 - Nerd Font
+- Kitty
+- bspwm 
+- sxhkd
+- rofi
+- feh 
+- polybar
+- fish, omf (optional)
 
 # Screenshot
-![screen](https://user-images.githubusercontent.com/96564938/205871687-fc4a0b59-4da7-4ac8-ae17-bbdf00d74884.png)
+![screen](https://user-images.githubusercontent.com/96564938/208038521-9e753693-1410-433f-9395-6af6c41e6f37.png)
