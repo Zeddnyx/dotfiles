@@ -3,9 +3,9 @@
 bspc monitor -d I 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc config border_width         1.5
+bspc config border_width         0
 bspc config focused_border_color "#af17c4"
-bspc config normal_border_color  "#fff"
+bspc config normal_border_color  "#111111"
 bspc config window_gap           7
 bspc config focus_follows_pointer true
 
@@ -21,5 +21,5 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 picom  --config ~/.config/bspwm/picom/picom.conf &
-feh --bg-scale /home/zedd/.config/wallpaper/anime.png
+feh --bg-scale /home/zedd/.config/wallpaper/simple.png
 ~/.config/bspwm/polybar/launch.sh
