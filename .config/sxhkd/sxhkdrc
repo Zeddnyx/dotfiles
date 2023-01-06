@@ -9,9 +9,8 @@ super + Return
 super + @space
   rofi -show drun
 
-ctrl + s 
-  scrot screen.png -q 100
-
+ctrl + n
+  nmtui connect
 
 
 # make sxhkd reload its configuration files:
@@ -28,11 +27,15 @@ alt + f
 alt + v
   ./inkscape.AppImage
 
-ctrl + s
-  scrot screen -q 100
-
-super + p
+alt + p
   gpick -p
+
+# take a screenshot
+alt + s 
+  scrot screenshot.png -q 100
+
+alt + a 
+  scrot -s screen-select.png -q 100
 
 # quit/restart bspwm
 super + alt + {q,r}
