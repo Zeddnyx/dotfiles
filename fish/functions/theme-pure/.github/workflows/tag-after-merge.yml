@@ -1,0 +1,21 @@
+name: Add New Tag After Merge
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - ./conf.d/pure.fish
+
+jobs:
+  tag-on-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: butlerlogic/action-autotag@stable
+        with:
+          root: "./conf.d/pure.fish"
+          regex_pattern: "pure_version\\s(?<version>(\\d+(\\.)?){3})"
+          tag_prefix: "v"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
