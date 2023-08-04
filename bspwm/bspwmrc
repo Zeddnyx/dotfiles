@@ -19,5 +19,5 @@ bspc rule -a telegram-desktop desktop='^3'
 
 sxhkd &
 # picom --config ~/.config/bspwm/picom/picom.conf &
-feh --bg-scale ~/.config/wallpaper/bridge-red-sky.jpg
+feh --bg-scale ~/.config/wallpaper/panda-sakura-tree.png
 ~/.config/bspwm/polybar/launch.sh
